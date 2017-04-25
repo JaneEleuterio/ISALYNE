@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<config>
+    <componets>
+        <!-- static components -->
+        <component feature="App" isSensor="false" name="Controller" orderT="141"/>
+        <component feature="Catalogue" isSensor="false" name="Catalogue" orderT="122"/>
+        <component feature="Payment" isSensor="false" name="Payment" orderT="139"/>
+        <component feature="BankInvoice" isSensor="false" name="BankInvoice" orderT="136"/>
+        <component feature="BankTransfer" isSensor="false" name="BankTransfer" orderT="102"/>
+        <component feature="CreditCard" isSensor="false" name="CreditCard" orderT="132"/>
+        <component feature="Java" isSensor="false" name="Java" orderT="126"/>
+        <component feature="MoneyPayment" isSensor="false" name="MoneyPayment" orderT="134"/>
+        <!-- dymanic components -->
+        <component feature="MasterCardA" isSensor="false" name="MasterCardA" orderT="115"/>
+        <component feature="MasterCardB" isSensor="false" name="MasterCardB" orderT="105"/>
+        <component feature="VisaA" isSensor="false" name="VisaA" orderT="107"/>
+        <component feature="VisaB" isSensor="false" name="VisaB" orderT="112"/>
+        <component feature="VisaC" isSensor="false" name="VisaC" orderT="103"/>
+        <!-- special cases -->
+        <component feature="MasterCardA" isSensor="true" name="Conn_sensors_MasterCardASensor" orderT="100"/>
+        <component feature="MasterCardB" isSensor="true" name="Conn_sensors_MasterCardBSensor" orderT="123"/>
+        <component feature="VisaA" isSensor="true" name="Conn_sensors_VisaASensor" orderT="117"/>
+        <component feature="VisaB" isSensor="true" name="Conn_sensors_VisaBSensor" orderT="120"/>
+        <component feature="VisaC" isSensor="true" name="Conn_sensors_VisaCSensor" orderT="101"/>
+        <!-- sensors -->
+        <component feature="MasterCardA" isSensor="true" name="MasterCardASensor" orderT="130"/>
+        <component feature="MasterCardB" isSensor="true" name="MasterCardBSensor" orderT="124"/>
+        <component feature="VisaA" isSensor="true" name="VisaASensor" orderT="118"/>
+        <component feature="VisaB" isSensor="true" name="VisaBSensor" orderT="121"/>
+        <component feature="VisaC" isSensor="true" name="VisaCSensor" orderT="110"/>
+    </componets>
+    <!-- features -->
+    <features>
+        <feature name="eShop"/>
+        <feature name="App"/>
+        <feature name="GUI"/>
+        <feature name="Java"/>
+        <feature name="Catalogue"/>
+        <feature name="Payment"/>
+        <feature name="BankInvoice"/>
+        <feature name="BankTransfer"/>
+        <feature name="CreditCard"/>
+        <feature name="MasterCard"/>
+        <feature name="MasterCardA"/>
+        <feature name="MasterCardB"/>
+        <feature name="Visa"/>
+        <feature name="VisaA"/>
+        <feature name="VisaB"/>
+        <feature name="VisaC"/>
+        <feature name="MoneyPayment"/>
+    </features>
+    <!-- Origin has the name of the component not of the feature -->
+    <!-- Destination has the name of the component not of the feature -->
+    <connectors>
+        <!-- mapekcosmos.connectors are also mapekcosmos.components -->
+        <connector destination="MasterCardASensor" name="Conn_MasterCardA_MasterCardASensor" orderT="119" origin="MasterCardA"/>
+        <connector destination="MasterCardBSensor" name="Conn_MasterCardB_MasterCardBSensor" orderT="106" origin="MasterCardB"/>
+        <connector destination="VisaASensor" name="Conn_VisaA_VisaASensor" orderT="108" origin="VisaA"/>
+        <connector destination="VisaBSensor" name="Conn_VisaB_VisaBSensor" orderT="114" origin="VisaB"/>
+        <connector destination="VisaCSensor" name="Conn_VisaC_VisaCSensor" orderT="104" origin="VisaC"/>
+        <connector destination="Controller" name="Conn_Catalogue_Controller" orderT="125" origin="Catalogue"/>
+        <connector destination="Controller" name="Conn_Payment_Controller" orderT="140" origin="Payment"/>
+        <connector destination="Controller" name="Conn_Java_Controller" orderT="127" origin="Java"/>
+        <connector destination="Payment" name="Conn_CreditCard_Payment" orderT="133" origin="CreditCard"/>
+        <connector destination="Payment" name="Conn_BankTransfer_Payment" orderT="138" origin="BankTransfer"/>
+        <connector destination="Payment" name="Conn_BankInvoice_Payment" orderT="137" origin="BankInvoice"/>
+        <connector destination="Payment" name="Conn_MoneyPayment_Payment" orderT="135" origin="MoneyPayment"/>
+        <connector destination="CreditCard" name="Conn_MasterCardA_CreditCard" orderT="116" origin="MasterCardA"/>
+        <connector destination="CreditCard" name="Conn_MasterCardB_CreditCard" orderT="109" origin="MasterCardB"/>
+        <connector destination="CreditCard" name="Conn_VisaA_CreditCard" orderT="111" origin="VisaA"/>
+        <connector destination="CreditCard" name="Conn_VisaB_CreditCard" orderT="113" origin="VisaB"/>
+        <connector destination="CreditCard" name="Conn_VisaC_CreditCard" orderT="131" origin="VisaC"/>
+    </connectors>
+</config>

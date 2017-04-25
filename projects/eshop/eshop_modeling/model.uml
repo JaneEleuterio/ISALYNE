@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Lq_xsCm5EeauN9FKuogoBQ" name="model">
+  <packagedElement xmi:type="uml:Component" xmi:id="_Rzoj4Cm5EeauN9FKuogoBQ" name="Controller"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Txf-wCm5EeauN9FKuogoBQ" name="IControllerManager"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_c9M5UCm5EeauN9FKuogoBQ" name="Realization0" client="_Rzoj4Cm5EeauN9FKuogoBQ" supplier="_Txf-wCm5EeauN9FKuogoBQ" contract="_Txf-wCm5EeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_Akqc0CnBEeauN9FKuogoBQ" name="Catalogue"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_B52HECnBEeauN9FKuogoBQ" name="ICatalogueManager"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_Eb8QYCnBEeauN9FKuogoBQ" name="Realization1" client="_Akqc0CnBEeauN9FKuogoBQ" supplier="_B52HECnBEeauN9FKuogoBQ" contract="_B52HECnBEeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_F9vaUCnBEeauN9FKuogoBQ" name="Payment"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_KSGygCnBEeauN9FKuogoBQ" name="IPaymentManager"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_M16MACnBEeauN9FKuogoBQ" name="Realization2" client="_F9vaUCnBEeauN9FKuogoBQ" supplier="_KSGygCnBEeauN9FKuogoBQ" contract="_KSGygCnBEeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_VS60kCnBEeauN9FKuogoBQ" name="BankInvoice"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_YjAFQCnBEeauN9FKuogoBQ" name="BankTransfer"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_a20iACnBEeauN9FKuogoBQ" name="CreditCard"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_jsdF8CnBEeauN9FKuogoBQ" name="ICreditCardManager"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_m6JJ8CnBEeauN9FKuogoBQ" name="IBankTransferManager"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_yV_iMCnBEeauN9FKuogoBQ" name="IBankInvoiceManager"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_4Am7oCnBEeauN9FKuogoBQ" name="Realization3" client="_a20iACnBEeauN9FKuogoBQ" supplier="_jsdF8CnBEeauN9FKuogoBQ" contract="_jsdF8CnBEeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_4aJdACnBEeauN9FKuogoBQ" name="Realization4" client="_VS60kCnBEeauN9FKuogoBQ" supplier="_yV_iMCnBEeauN9FKuogoBQ" contract="_yV_iMCnBEeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_4ugjcCnBEeauN9FKuogoBQ" name="Realization5" client="_YjAFQCnBEeauN9FKuogoBQ" supplier="_m6JJ8CnBEeauN9FKuogoBQ" contract="_m6JJ8CnBEeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_5mTHECnBEeauN9FKuogoBQ" name="Usage0" client="_Rzoj4Cm5EeauN9FKuogoBQ" supplier="_KSGygCnBEeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_6cM0UCnBEeauN9FKuogoBQ" name="Usage1" client="_Rzoj4Cm5EeauN9FKuogoBQ" supplier="_B52HECnBEeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_HqBggCnCEeauN9FKuogoBQ" name="MasterCardA"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_I8rbMCnCEeauN9FKuogoBQ" name="MasterCardB"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_Q7j9UCnCEeauN9FKuogoBQ" name="VisaA"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_SQIjkCnCEeauN9FKuogoBQ" name="VisaB"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_TLtbACnCEeauN9FKuogoBQ" name="VisaC"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_WUqwACnCEeauN9FKuogoBQ" name="IMasterCardManager"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_kMmwMCnCEeauN9FKuogoBQ" name="IVisaManager"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_qMt4gCnCEeauN9FKuogoBQ" name="Realization6" client="_HqBggCnCEeauN9FKuogoBQ" supplier="_WUqwACnCEeauN9FKuogoBQ" contract="_WUqwACnCEeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_qe5NoCnCEeauN9FKuogoBQ" name="Realization7" client="_I8rbMCnCEeauN9FKuogoBQ" supplier="_WUqwACnCEeauN9FKuogoBQ" contract="_WUqwACnCEeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_q4xGMCnCEeauN9FKuogoBQ" name="Realization8" client="_Q7j9UCnCEeauN9FKuogoBQ" supplier="_kMmwMCnCEeauN9FKuogoBQ" contract="_kMmwMCnCEeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_rJFaICnCEeauN9FKuogoBQ" name="Realization9" client="_SQIjkCnCEeauN9FKuogoBQ" supplier="_kMmwMCnCEeauN9FKuogoBQ" contract="_kMmwMCnCEeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_rmYaICnCEeauN9FKuogoBQ" name="Realization10" client="_TLtbACnCEeauN9FKuogoBQ" supplier="_kMmwMCnCEeauN9FKuogoBQ" contract="_kMmwMCnCEeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_uW5Z8CnCEeauN9FKuogoBQ" name="Usage5" client="_a20iACnBEeauN9FKuogoBQ" supplier="_WUqwACnCEeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_u7ZOICnCEeauN9FKuogoBQ" name="Usage6" client="_a20iACnBEeauN9FKuogoBQ" supplier="_kMmwMCnCEeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_-KhDsCnCEeauN9FKuogoBQ" name="Usage2" client="_F9vaUCnBEeauN9FKuogoBQ" supplier="_jsdF8CnBEeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_-iF2MCnCEeauN9FKuogoBQ" name="Usage3" client="_F9vaUCnBEeauN9FKuogoBQ" supplier="_yV_iMCnBEeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_-9OTACnCEeauN9FKuogoBQ" name="Usage4" client="_F9vaUCnBEeauN9FKuogoBQ" supplier="_m6JJ8CnBEeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_qBchgDJmEeaZDcmKLAHBWA" name="Java"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_wDoGYDJmEeaZDcmKLAHBWA" name="Android"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="__sn0gDJmEeaZDcmKLAHBWA" name="Realization101" client="_qBchgDJmEeaZDcmKLAHBWA"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_AQ8CgDJnEeaZDcmKLAHBWA" name="Realization1011" client="_wDoGYDJmEeaZDcmKLAHBWA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_BC5q8DJnEeaZDcmKLAHBWA" name="Usage7" client="_Rzoj4Cm5EeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_Bio68DJnEeaZDcmKLAHBWA" name="Usage8" client="_Rzoj4Cm5EeauN9FKuogoBQ"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_FeQgADPoEea2eqk5RVbL4w" name="IGUIManager"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_J7e5QDPoEea2eqk5RVbL4w" name="Realization10111" client="_qBchgDJmEeaZDcmKLAHBWA" supplier="_FeQgADPoEea2eqk5RVbL4w" contract="_FeQgADPoEea2eqk5RVbL4w"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_Ki1NIDPoEea2eqk5RVbL4w" name="Realization101111" client="_wDoGYDJmEeaZDcmKLAHBWA" supplier="_FeQgADPoEea2eqk5RVbL4w" contract="_FeQgADPoEea2eqk5RVbL4w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_M_KFoDPoEea2eqk5RVbL4w" name="Usage9" client="_Rzoj4Cm5EeauN9FKuogoBQ" supplier="_FeQgADPoEea2eqk5RVbL4w"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_icwxgDP6Eea_K8syyWMotg" name="Banner"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_kJjqgDP6Eea_K8syyWMotg" name="IBannerManager"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_n9sqgDP6Eea_K8syyWMotg" name="Realization1011111" client="_icwxgDP6Eea_K8syyWMotg" supplier="_kJjqgDP6Eea_K8syyWMotg" contract="_kJjqgDP6Eea_K8syyWMotg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_on-WkDP6Eea_K8syyWMotg" name="Usage10" client="_Rzoj4Cm5EeauN9FKuogoBQ" supplier="_kJjqgDP6Eea_K8syyWMotg"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_cwwb4ELrEeaMRf1GkLMBTA" name="IMoneyPaymentManager"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_fXOH0ELrEeaMRf1GkLMBTA" name="MoneyPayment"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_oDTHIELrEeaMRf1GkLMBTA" name="Realization10111111" client="_fXOH0ELrEeaMRf1GkLMBTA" supplier="_cwwb4ELrEeaMRf1GkLMBTA" contract="_cwwb4ELrEeaMRf1GkLMBTA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_qUmbYELrEeaMRf1GkLMBTA" name="Usage101" client="_F9vaUCnBEeauN9FKuogoBQ" supplier="_cwwb4ELrEeaMRf1GkLMBTA"/>
+</uml:Model>

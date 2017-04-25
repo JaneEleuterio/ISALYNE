@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="0">
+		<struct>
+			<and abstract="true" coordinates="446, 40" mandatory="true" name="eShop">
+				<and coordinates="452, 90" mandatory="true" name="App" umlcomponents="Controller/">
+					<feature coordinates="335, 140" name="Banner" umlcomponents="Banner/"/>
+					<alt abstract="true" coordinates="387, 140" mandatory="true" name="GUI">
+						<feature coordinates="351, 190" mandatory="true" name="Android" umlcomponents="Android/"/>
+						<feature coordinates="405, 190" mandatory="true" name="Java" umlcomponents="Java/"/>
+					</alt>
+					<feature coordinates="452, 140" mandatory="true" name="Catalogue" umlcomponents="Catalogue/"/>
+					<or coordinates="546, 140" mandatory="true" name="Payment" umlcomponents="Payment/">
+						<feature coordinates="460, 190" mandatory="true" name="BankInvoice" umlcomponents="BankInvoice/"/>
+						<feature coordinates="537, 190" mandatory="true" name="BankTransfer" umlcomponents="BankTransfer/"/>
+						<or coordinates="621, 190" mandatory="true" name="CreditCard" umlcomponents="CreditCard/">
+							<alt abstract="true" coordinates="552, 240" dynamic="true" mandatory="true" name="MasterCard">
+								<feature coordinates="508, 290" dynamic="true" mandatory="true" name="MasterCardA" umlcomponents="MasterCardA/"/>
+								<feature coordinates="590, 290" dynamic="true" mandatory="true" name="MasterCardB" umlcomponents="MasterCardB/"/>
+							</alt>
+							<alt abstract="true" coordinates="721, 240" dynamic="true" mandatory="true" name="Visa">
+								<feature coordinates="672, 290" dynamic="true" mandatory="true" name="VisaA" umlcomponents="VisaA/"/>
+								<feature coordinates="717, 290" dynamic="true" mandatory="true" name="VisaB" umlcomponents="VisaB/"/>
+								<feature coordinates="762, 290" dynamic="true" mandatory="true" name="VisaC" umlcomponents="VisaC/"/>
+							</alt>
+						</or>
+						<feature coordinates="691, 190" mandatory="true" name="MoneyPayment" umlcomponents="MoneyPayment/"/>
+					</or>
+				</and>
+			</and>
+		</struct>
+		<constraints>
+			<rule coordinates="356, 252">
+				<imp>
+					<var>Banner</var>
+					<var>Android</var>
+				</imp>
+			</rule>
+		</constraints>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
