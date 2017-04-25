@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<and abstract="true" mandatory="true" name="eShop">
+				<and mandatory="true" name="App" umlcomponents="Controller">
+					<and abstract="true" mandatory="true" name="GUI">
+						<feature mandatory="true" name="Java" umlcomponents="JavaFXView"/>
+					</and>
+					<feature mandatory="true" name="Catalogue" umlcomponents="Catalogue"/>
+					<and mandatory="true" name="Payment" umlcomponents="Payment">
+						<feature mandatory="true" name="BankInvoice" umlcomponents="BankInvoice"/>
+						<feature mandatory="true" name="BankTransfer" umlcomponents="BankTransfer"/>
+						<and mandatory="true" name="CreditCard" umlcomponents="CreditCard">
+							<alt abstract="true" dynamic="true" mandatory="true" name="MasterCard">
+								<feature dynamic="true" mandatory="true" name="MasterCardA" umlcomponents="MasterCardA"/>
+								<feature dynamic="true" mandatory="true" name="MasterCardB" umlcomponents="MasterCardB"/>
+							</alt>
+							<alt abstract="true" dynamic="true" mandatory="true" name="Visa">
+								<feature dynamic="true" mandatory="true" name="VisaA" umlcomponents="VisaA"/>
+								<feature dynamic="true" mandatory="true" name="VisaB" umlcomponents="VisaB"/>
+								<feature dynamic="true" mandatory="true" name="VisaC" umlcomponents="VisaC"/>
+							</alt>
+						</and>
+						<feature mandatory="true" name="MoneyPayment" umlcomponents="MoneyPayment"/>
+					</and>
+					<feature mandatory="true" name="Sale" umlcomponents="Sale"/>
+				</and>
+			</and>
+		</struct>
+		<constraints/>
+	</featureModel>
