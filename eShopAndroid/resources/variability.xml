@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<and abstract="true" mandatory="true" name="eShop">
+				<and mandatory="true" name="App">
+					<and mandatory="true" name="GUI">
+						<!--<feature mandatory="true" name="Java"/>-->
+						<feature mandatory="true" name="Android"/>
+					</and>
+					<feature mandatory="true" name="Catalogue"/>
+					<and mandatory="true" name="Payment">
+						<feature mandatory="true" name="BankInvoice"/>
+						<feature mandatory="true" name="BankTransfer"/>
+						<and mandatory="true" name="CreditCard">
+							<alt mandatory="true" name="MasterCard">
+								<feature mandatory="true" name="MasterCardA"/>
+								<feature mandatory="true" name="MasterCardB"/>
+							</alt>
+							<alt mandatory="true" name="Visa">
+								<feature mandatory="true" name="VisaA"/>
+								<feature mandatory="true" name="VisaB"/>
+								<feature mandatory="true" name="VisaC"/>
+							</alt>
+						</and>
+						<feature mandatory="true" name="MoneyPayment"/>
+					</and>
+				</and>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eShop.PagamentoActivity">
+
+    <TextView
+        android:id="@+id/txtTransf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Transferência"
+        android:textSize="30sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtTransf"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/divTitulo" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL"
+        android:textSize="24sp"
+        android:layout_below="@+id/divTitulo"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtTotal"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/divCorpo" />
+
+    <TextView
+        android:id="@+id/txtBanco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Banco"
+        android:layout_below="@+id/divCorpo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/lbBanco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Banco"
+        android:textSize="24sp"
+        android:layout_below="@+id/txtBanco"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txTitular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbBanco"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Titular" />
+
+    <TextView
+        android:id="@+id/lbTitular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Titular"
+        android:textSize="24sp"
+        android:layout_below="@+id/txTitular"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbTitular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Conta Corrente" />
+
+    <TextView
+        android:id="@+id/lbConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conta Corrente"
+        android:textSize="24sp"
+        android:layout_below="@+id/txtConta"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtAgencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbConta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Agência" />
+
+    <TextView
+        android:id="@+id/lbAgencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agência"
+        android:textSize="24sp"
+        android:layout_below="@+id/txtAgencia"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtDocumento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbAgencia"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Documento" />
+
+    <TextView
+        android:id="@+id/lbDoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPF/CNPJ"
+        android:textSize="24sp"
+        android:layout_below="@+id/txtDocumento"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

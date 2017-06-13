@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eShop.PagamentoActivity">
+
+    <TextView
+        android:id="@+id/txtCartao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Cartão"
+        android:textSize="30sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtCartao"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/divTitulo" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL"
+        android:textSize="24sp"
+        android:layout_below="@+id/divTitulo"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtTotal"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/divCorpo" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/divCorpo"
+        android:id="@+id/rgCartao">
+
+        <RadioButton android:id="@+id/rbMaster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MasterCard"
+            android:checked="true" />
+
+        <RadioButton android:id="@+id/rbVisa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visa" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lbNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rgCartao"
+        android:text="Nome impresso no cartão" />
+
+    <EditText
+        android:id="@+id/edNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lbNome"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/lbCartao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edNome"
+        android:text="Número do cartão" />
+
+    <EditText
+        android:id="@+id/edNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lbCartao"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/lbCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cód. Seg."
+        android:layout_below="@+id/edNome"
+        android:layout_toEndOf="@+id/edNumero" />
+
+    <EditText
+        android:id="@+id/edCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbCodigo"
+        android:layout_toEndOf="@+id/edNumero"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/lbValidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edNumero"
+        android:text="Validade" />
+
+    <EditText
+        android:id="@+id/edValidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbValidade"
+        android:layout_toStartOf="@+id/edCodigo"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="MM/AA"
+        android:layout_alignEnd="@+id/lbNome" />
+
+    <TextView
+        android:id="@+id/lbParcelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edValidade"
+        android:layout_toEndOf="@+id/edValidade"
+        android:text="Parcelas" />
+
+    <EditText
+        android:id="@+id/edParcelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/lbParcelas"
+        android:layout_toEndOf="@+id/edValidade" />
+
+    <Button
+        android:id="@+id/btnFinalizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="Finalizar"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/lbCartao" />
+
+</RelativeLayout>

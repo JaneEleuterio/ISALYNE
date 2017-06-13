@@ -1,1 +1,0 @@
-START cmd.exe /c java -jar VisaA.jar

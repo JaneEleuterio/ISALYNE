@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eShop.CarrinhoActivity">
+
+    <TextView
+        android:id="@+id/txtCarrinho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Carrinho"
+        android:textSize="30sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtCarrinho"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/divTitulo" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL"
+        android:textSize="24sp"
+        android:layout_below="@+id/divTitulo"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtTotal"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/divCorpo" />
+
+    <Button
+        android:id="@+id/btnRecalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/divCorpo"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/divTitulo"
+        android:text="Recalcular"
+        android:textSize="10sp" />
+
+    <ListView
+        android:id="@+id/listViewCarrinho"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divCorpo"
+        android:layout_above="@+id/btnPagar"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnPagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pagar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

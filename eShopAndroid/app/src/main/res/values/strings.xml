@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">eShop</string>
+    <string name="app_descricao">Uma Aplicação Dinâmica para o Comércio</string>
+
+    <string name="menu_produtos">Produtos</string>
+    <string name="menu_carrinho">Carrinho</string>
+    <string name="menu_pagamento">Pagamento</string>
+
+    <string name="busca_produto">ID ou Nome do Produto</string>
+
+    <string name="botao_dinheiro">Dinheiro</string>
+    <string name="botao_cartao">Cartão</string>
+    <string name="botao_boleto">Boleto</string>
+    <string name="botao_transf">Transferência</string>
+</resources>

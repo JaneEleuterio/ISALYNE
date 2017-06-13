@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eShop.PagamentoActivity">
+
+    <TextView
+        android:id="@+id/txtDinheiro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Dinheiro"
+        android:textSize="30sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtDinheiro"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/divTitulo" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL"
+        android:textSize="24sp"
+        android:layout_below="@+id/divTitulo"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtTotal"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/divCorpo" />
+
+    <TextView
+        android:id="@+id/txtValorPago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/divCorpo"
+        android:layout_marginTop="16dp"
+        android:text="Valor Pago" />
+
+    <EditText
+        android:id="@+id/edValorPago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtValorPago"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnTroco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/edValorPago"
+        android:text="Cal. Troco"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/edValorPago" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/btnTroco"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/divTroco" />
+
+    <TextView
+        android:id="@+id/txtTroco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Troco"
+        android:textSize="24sp"
+        android:layout_below="@+id/divTroco"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
